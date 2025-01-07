@@ -1,0 +1,159 @@
+/* Base styling for the body */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #2b5279; /* Light blue-gray background */
+  color: #ba4c4c; /* Text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the todo app */
+.todo {
+  padding: 20px;
+  max-width: 600px;
+  background-color: peachpuff; /* Bright white background for the app */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Slight box shadow */
+  margin: 40px auto;
+}
+
+/* Title styling */
+h1 {
+  font-weight: 650;
+  font-size: 45px;
+  margin: 10px;
+  margin-bottom: 20px;
+  color: #2c3e50; /* Darker color for better contrast */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #ecf0f1; /* Slight shadow for a 3D effect */
+}
+
+/* Form input styles */
+input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #bdc3c7; /* Subtle border */
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Container for todo items */
+.item-cont {
+  text-align: left;
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #ecf0f1;
+  background-color: #f9f9f9; /* Light background */
+  border-radius: 5px;
+}
+
+/* General row styling */
+.g-row {
+  margin: 10px 7px;
+  align-items: center;
+}
+
+/* Button styles with hover effects */
+.g-btn {
+  min-width: 80px;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Button hover effects */
+.g-btn:hover {
+  background-color: #2980b9; /* Blue tint on hover */
+  color: white; /* White text on hover */
+}
+
+.btn-success {
+  background-color: #27ae60;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #2ecc71; /* Light green on hover */
+}
+
+.btn-danger {
+  background-color: #c0392b;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #e74c3c; /* Light red on hover */
+}
+
+/* Specific styling for list items */
+.list-group-item {
+  background-color: #ecf0f1;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* General item and span styles */
+.g-item {
+  background-color: #dfe6e9;
+}
+
+.g-span {
+  font-size: medium;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Container spacing */
+.container {
+  padding: 10px 0;
+}
+
+/* Form section improvements */
+.col-6, .col-4, .col-2 {
+  padding: 0 5px; /* Space between inputs and buttons */
+}
+
+input[type="text"], input[type="date"] {
+  background-color: #fff;
+  color: #2c3e50;
+  border: 1px solid #bdc3c7; /* Subtle, consistent borders */
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="date"]:focus {
+  border-color: #2980b9; /* Highlighted border on focus */
+  outline: none;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+  .g-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col-6, .col-4, .col-2 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .g-btn {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+}
+
